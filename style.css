@@ -113,3 +113,14 @@ Dark Mode
 .container--play-game {
     background-color: red;
 }
+
+
+/* 
+    TODO
+        1)  Create an ID element to toggle the dark mode button so it
+            shows either the sun or the moon. JS
+
+        2)  Create var variables for dark and light mode
+
+        3)  Toggle on click event to turn dark mode on and off.
+*/
