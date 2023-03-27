@@ -4,6 +4,10 @@
 font-family: 'Roboto', sans-serif;
 */
 
+/*
+General Styling
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -17,6 +21,10 @@ body {
     margin: 0;
 }
 
+/*
+Overall Layout
+*/
+
 .container--game-board {
     border: 2px red solid;
     display: grid;
@@ -24,8 +32,13 @@ body {
     gap: 1rem;
 }
 
+/*
+Game Title and Dark Mode Row
+*/
+
 .container--game-title {
     border: 2px blue solid;
+    background-color: pink;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -37,6 +50,10 @@ body {
     font-size: 1.6rem;
     padding: 1rem 2rem;
 }
+
+/*
+Dark Mode
+*/
 
 .container--light-dark-mode button {
     position: relative;
