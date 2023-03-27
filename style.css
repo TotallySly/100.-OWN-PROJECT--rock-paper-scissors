@@ -28,7 +28,7 @@ Overall Layout
 .container--game-board {
     border: 2px red solid;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
 
@@ -41,9 +41,6 @@ Game Title and Dark Mode Row
     background-color: pink;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-items: flex-end;
-    gap: 0.5rem;
 }
 
 .container--game-title > h1 {
@@ -63,4 +60,20 @@ Dark Mode
 
 .container--light-dark-mode span {
     position: absolute;
+}
+
+/*
+Rules Title
+*/
+
+.container--game-rules-heading {
+    background-color: aqua;
+}
+
+.container--game-rules {
+    background-color: green;
+}
+
+.container--play-game {
+    background-color: red;
 }
