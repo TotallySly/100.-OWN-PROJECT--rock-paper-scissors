@@ -1,10 +1,16 @@
-const bodyDocument = document.body
-const darkModeContainer = document.querySelector('.container--dark-mode-btns')
+const documentBody = document.body
+const darkModeToggler = document.querySelector('.container--dark-mode-btns')
 const darkModeBtn = document.getElementById('darkModeBtn')
 const lightModeBtn = document.getElementById('lightModeBtn')
 
-darkModeContainer.addEventListener('click', () => {
+const darkModeContainers = document.querySelectorAll('div.--container')
+
+darkModeToggler.addEventListener('click', () => {
     darkModeBtn.classList.toggle('--hide-content')
-    bodyDocument.classList.toggle('--dark-mode')
+    documentBody.classList.toggle('--dark-mode')
     lightModeBtn.classList.toggle('--hide-content')
+
+    darkModeContainers.forEach((darkModeContainer) => {
+        darkModeContainer.classList.add('--dark-mode-container')
+    })
 })
