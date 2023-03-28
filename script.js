@@ -14,3 +14,8 @@ darkModeToggler.addEventListener('click', () => {
         darkModeContainer.classList.add('--dark-mode-container')
     })
 })
+
+/* 
+    TODO
+        1)  ADD DARK MODE CONTAINER BOXES TO THE DARK MODE TOGGLE!!!!!!
+*/
