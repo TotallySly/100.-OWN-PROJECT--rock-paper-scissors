@@ -1,17 +1,25 @@
+// A variable to get the body of the document
 const documentBody = document.body
-const darkModeToggler = document.querySelector('.container--dark-mode-btns')
-const darkModeBtn = document.getElementById('darkModeBtn')
-const lightModeBtn = document.getElementById('lightModeBtn')
+// A variable to get the body of the document
+const toggleDarkMode = document.querySelector('.container__dark-mode-toggler-btns')
+const btnDarkMode = document.getElementById('btnDarkMode')
+const btnLightMode = document.getElementById('btnLightMode')
 
-const darkModeContainers = document.querySelectorAll('div.--container')
+const containersDarkMode = document.querySelectorAll('div.--container')
 
-darkModeToggler.addEventListener('click', () => {
-    darkModeBtn.classList.toggle('--hide-content')
+toggleDarkMode.addEventListener('click', () => {
+    btnDarkMode.classList.toggle('--hide-content')
     documentBody.classList.toggle('--dark-mode')
-    lightModeBtn.classList.toggle('--hide-content')
+    btnLightMode.classList.toggle('--hide-content')
 
-    darkModeContainers.forEach((darkModeContainer) => {
-        darkModeContainer.classList.add('--dark-mode-container')
+    containersDarkMode.forEach((containerDarkMode) => {
+        if (btnLightMode.classList.contains('--hide-content')) {
+            containerDarkMode.style.backgroundColor = 'rgba(45, 42, 35, 1)'
+            console.log('true')
+        } else {
+            containerDarkMode.style.backgroundColor = 'rgba(127, 126, 124, 1)'
+            console.log('false')
+        }
     })
 })
 

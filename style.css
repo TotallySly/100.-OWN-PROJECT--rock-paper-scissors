@@ -9,34 +9,31 @@ f   ont-family: 'Roboto', sans-serif;
 */
 
 :root {
-    --light-mode-font-color: rgba(20, 19, 17, 1);
+    /* *** Light Mode ***  */
+    --light-mode--background: rgba(194, 193, 190, 1);
     --light-mode--container-background: rgba(127, 126, 124, 1);
-    --light-mode-background: rgba(194, 193, 190, 1);
-    --dark-mode-font-color: rgba(194, 193, 190, 1);
+    --light-mode--font-color: rgba(20, 19, 17, 1);
+    /* *** Dark Mode ***  */
+    --dark-mode--background: rgba(127, 126, 124, 1);
     --dark-mode--container-background: rgba(45, 42, 35, 1);
-    --dark-mode-background: rgba(127, 126, 124, 1);
-}
-
-.--dark-mode {
-    background-color: var(--light-mode-font-color);
-    color: var(--light-mode-background);
-}
-
-.--dark-mode-container {
-    background-color: var(--dark-mode--container-background);
+    --dark-mode--font-color: rgba(194, 193, 190, 1);
 }
 
 /* 
-    Utility Classes
+    *** Utility Classes ***
 */
 
 .--container {
     width: 90vw;
     margin-left: 5vw;
 }
-
 .--hide-content {
     display: none;
+}
+
+.--dark-mode {
+    background-color: var(--light-mode--font-color);
+    color: var(--light-mode--background);
 }
 
 .--position-relative {
@@ -61,15 +58,15 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    font: var(--light-mode-font-color);
-    background-color: var(--light-mode-background);
+    font: var(--light-mode--font-color);
+    background-color: var(--light-mode--background);
 }
 
 /*
-    Overall Layout
+    *** Overall Layout ***
 */
 
-.container--game-board {
+.container__game_board {
     border: 2px red solid;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -77,25 +74,25 @@ body {
 }
 
 /*
-    Game Title and Dark Mode Row
+    *** Game Title and Dark Mode Row ***
 */
 
-.container--game-title {
+.container__game-title {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--light-mode--container-background);
 }
 
-.container--game-title > h1 {
+.container__game-title > h1 {
     font-size: 1.6rem;
     padding: 1rem 2rem;
 }
 
 /*
-Dark Mode
+    *** Dark Mode ***
 */
 
-.container--light-dark-mode {
+.container__dark-mode-toggler {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,12 +100,12 @@ Dark Mode
     padding-right: 5rem;
 }
 
-.container--dark-mode-btns {
+.container__dark-mode-toggler-btns {
     width: max-content;
     height: max-content;
 }
 
-.container--light-dark-mode button {
+.container__dark-mode-toggler button {
     height: 3rem;
     width: 7rem;
     border: none;
@@ -116,17 +113,17 @@ Dark Mode
 }
 
 /*
-    Rules Title
+    *** Rules Title ***
 */
 
-.container--game-rules-heading {
+.container__game-rules-title {
     background-color: var(--light-mode--container-background);
 }
 
-.container--game-rules {
+.container__game-rules {
     background-color: var(--light-mode--container-background);
 }
 
-.container--play-game {
+.container__play-game {
     background-color: var(--light-mode--container-background);
 }
