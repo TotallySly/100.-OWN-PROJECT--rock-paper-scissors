@@ -127,3 +127,9 @@ body {
 .container__play-game {
     background-color: var(--light-mode--container-background);
 }
+
+/* 
+    TODO
+        1)  Use the new dark mode syntax
+        2)  Change the colours of the dark and light mode.
+*/
