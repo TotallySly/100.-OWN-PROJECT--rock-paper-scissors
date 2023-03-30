@@ -14,9 +14,9 @@ f   ont-family: 'Roboto', sans-serif;
     --light-mode--containers: #d2d3db;
     --light-mode--font-color: rgba(20, 19, 17, 1);
     /* *** Dark Mode ***  */
-    --dark-mode--body: rgba(127, 126, 124, 1);
-    --dark-mode--containers: rgba(45, 42, 35, 1);
-    --dark-mode--font-color: rgba(194, 193, 190, 1);
+    --dark-mode--body: rgba(20, 19, 17, 1);
+    --dark-mode--containers: #484b6a;
+    --dark-mode--font-color: #d2d3db;
 }
 
 /* 
@@ -32,8 +32,8 @@ f   ont-family: 'Roboto', sans-serif;
 }
 
 .--dark-mode {
-    background-color: var(--light-mode--font-color);
-    color: var(--light-mode--containers);
+    background-color: var(--dark-mode--body);
+    color: var(--dark-mode--font-color);
 }
 
 .--position-relative {
