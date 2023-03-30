@@ -14,10 +14,10 @@ toggleDarkMode.addEventListener('click', () => {
 
     containersDarkMode.forEach((containerDarkMode) => {
         if (btnLightMode.classList.contains('--hide-content')) {
-            containerDarkMode.style.backgroundColor = 'rgba(45, 42, 35, 1)'
+            containerDarkMode.style.backgroundColor = '#d2d3db'
             console.log('true')
         } else {
-            containerDarkMode.style.backgroundColor = 'rgba(127, 126, 124, 1)'
+            containerDarkMode.style.backgroundColor = '#484b6a'
             console.log('false')
         }
     })

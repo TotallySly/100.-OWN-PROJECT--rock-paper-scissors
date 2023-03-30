@@ -10,12 +10,12 @@ f   ont-family: 'Roboto', sans-serif;
 
 :root {
     /* *** Light Mode ***  */
-    --light-mode--background: rgba(194, 193, 190, 1);
-    --light-mode--container-background: rgba(127, 126, 124, 1);
+    --light-mode--body: #e4e5f1;
+    --light-mode--containers: #d2d3db;
     --light-mode--font-color: rgba(20, 19, 17, 1);
     /* *** Dark Mode ***  */
-    --dark-mode--background: rgba(127, 126, 124, 1);
-    --dark-mode--container-background: rgba(45, 42, 35, 1);
+    --dark-mode--body: rgba(127, 126, 124, 1);
+    --dark-mode--containers: rgba(45, 42, 35, 1);
     --dark-mode--font-color: rgba(194, 193, 190, 1);
 }
 
@@ -33,7 +33,7 @@ f   ont-family: 'Roboto', sans-serif;
 
 .--dark-mode {
     background-color: var(--light-mode--font-color);
-    color: var(--light-mode--background);
+    color: var(--light-mode--containers);
 }
 
 .--position-relative {
@@ -59,7 +59,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     font: var(--light-mode--font-color);
-    background-color: var(--light-mode--background);
+    background-color: var(--light-mode--body);
 }
 
 /*
@@ -80,7 +80,7 @@ body {
 .container__game-title {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: var(--light-mode--container-background);
+    background-color: var(--light-mode--containers);
 }
 
 .container__game-title > h1 {
@@ -117,15 +117,15 @@ body {
 */
 
 .container__game-rules-title {
-    background-color: var(--light-mode--container-background);
+    background-color: var(--light-mode--containers);
 }
 
 .container__game-rules {
-    background-color: var(--light-mode--container-background);
+    background-color: var(--light-mode--containers);
 }
 
 .container__play-game {
-    background-color: var(--light-mode--container-background);
+    background-color: var(--light-mode--containers);
 }
 
 /* 
