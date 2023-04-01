@@ -7,10 +7,9 @@ Dark Mode
 			Does Background colour toggle on click === False
 
 
-Light mode enabled = Moon Button === Correct
-	
+Light mode enabled = Moon Button === True
 	Light mode enabled = Moon Button === True
 	On click, add add turn on light mode button === True
-	Does it continue to add and remove === True
+		Does it continue to add and remove === True
 
 
