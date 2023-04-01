@@ -31,10 +31,10 @@ f   ont-family: 'Roboto', sans-serif;
     display: none;
 }
 
-.--dark-mode {
+/* .--dark-mode {
     background-color: var(--dark-mode--body);
     color: var(--dark-mode--font-color);
-}
+} */
 
 .--position-relative {
     position: relative;
@@ -58,8 +58,8 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    font: var(--light-mode--font-color);
-    background-color: var(--light-mode--body);
+    /* font: var(--light-mode--font-color);
+    background-color: var(--light-mode--body); */
 }
 
 /*
@@ -80,7 +80,7 @@ body {
 .container__game-title {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: var(--light-mode--containers);
+    /* background-color: var(--light-mode--containers); */
 }
 
 .container__game-title > h1 {
@@ -116,7 +116,7 @@ body {
     *** Rules Title ***
 */
 
-.container__game-rules-title {
+/* .container__game-rules-title {
     background-color: var(--light-mode--containers);
 }
 
@@ -126,10 +126,44 @@ body {
 
 .container__play-game {
     background-color: var(--light-mode--containers);
-}
+} */
 
 /* 
     TODO
         1)  Use the new dark mode syntax
         2)  Change the colours of the dark and light mode.
 */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --light-mode--body: #e4e5f1;
+        --light-mode--containers: #d2d3db;
+        --light-mode--font-color: rgba(20, 19, 17, 1);
+    }
+
+    .--container {
+        background-color: var(--light-mode--containers);
+    }
+
+    body {
+        background-color: var(--light-mode--body);
+        color: var(--light-mode--font-color);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --dark-mode--body: rgba(20, 19, 17, 1);
+        --dark-mode--containers: #484b6a;
+        --dark-mode--font-color: #d2d3db;
+    }
+
+    .--container {
+        background-color: var(--dark-mode--containers);
+    }
+
+    body {
+        background-color: var(--dark-mode--body);
+        color: var(--dark-mode--font-color);
+    }
+}
