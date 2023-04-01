@@ -7,7 +7,7 @@ const turnOnDarkModeBtn = document.getElementById('turnOnDarkMode')
 // A variable to get the light mode button.
 const turnOnLightModeBtn = document.getElementById('turnOnLightMode')
 // A variable to create a node list of all 'sections' with the '.--container class'.
-const containersLightOrDarkMode = document.querySelectorAll('section.--container')
+const allContainers = document.querySelectorAll('section.--container')
 
 function checkPrefersDarkMode() {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -22,6 +22,13 @@ function checkPrefersDarkMode() {
 function toggleContrastModeFunction() {
     toggleContrastMode.addEventListener('click', () => {
         turnOnLightModeBtn.classList.toggle('--hide-content')
+        addLightModeContrast()
+    })
+}
+
+function addLightModeContrast() {
+    allContainers.forEach((container) => {
+        container.style.backgroundColor = '#d2d3db'
     })
 }
 
