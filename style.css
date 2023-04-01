@@ -27,14 +27,19 @@ f   ont-family: 'Roboto', sans-serif;
     width: 90vw;
     margin-left: 5vw;
 }
+
+.--container.--light-mode--containers {
+    background-color: var(--light-mode--containers);
+}
+
 .--hide-content {
     display: none;
 }
 
-/* .--dark-mode {
-    background-color: var(--dark-mode--body);
-    color: var(--dark-mode--font-color);
-} */
+.--light-mode {
+    background-color: var(--light-mode--body);
+    color: var(--light-mode--font-color);
+}
 
 .--position-relative {
     position: relative;

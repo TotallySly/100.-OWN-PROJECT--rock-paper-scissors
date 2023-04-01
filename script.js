@@ -28,9 +28,15 @@ function toggleContrastModeFunction() {
 
 function addLightModeContrast() {
     allContainers.forEach((container) => {
-        container.style.backgroundColor = '#d2d3db'
+        container.classList.add('--light-mode-containers')
     })
 }
+
+/* 
+TODO See how you can remove the prefers colour scheme CSS rule in able to toggle through light and dark mode
+
+
+*/
 
 checkPrefersDarkMode()
 

@@ -1,0 +1,16 @@
+Dark Mode
+
+	Dark mode enabled = Sunshine Button === True
+	On click, add add turn on light mode button === True
+		Does it continue to add and remove === True
+		Add background colour to the body for light mode === True
+			Does Background colour toggle on click === False
+
+
+Light mode enabled = Moon Button === Correct
+	
+	Light mode enabled = Moon Button === True
+	On click, add add turn on light mode button === True
+	Does it continue to add and remove === True
+
+
