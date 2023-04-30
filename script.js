@@ -1,8 +1,20 @@
 const togglerBtn = document.querySelector('.container__dark-mode-toggler')
-const darkModeBtn = document.getElementById('turnOnDarkMode')
-const lightModeBtn = document.getElementById('turnOnLightMode')
+
+const toggleModeBtn = document.getElementById('turnOnLightMode')
+const documentBody = document.querySelector('body')
+
+const containers = document.querySelectorAll('div')
 
 togglerBtn.addEventListener('click', () => {
-    lightModeBtn.classList.toggle('--hide-content')
+    toggleModeBtn.classList.toggle('--hide-content')
+    documentBody.classList.toggle('--body--light-mode')
+    documentBody.classList.toggle('--body--dark-mode')
     console.log('CLICK')
+
+    containers.forEach((container) => {
+        container.classList.toggle('--container--light-mode')
+        container.classList.toggle('--container--dark-mode')
+        container.classList.toggle('--font--light-mode')
+        container.classList.toggle('--font--dark-mode')
+    })
 })

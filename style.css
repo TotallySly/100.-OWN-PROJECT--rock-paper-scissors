@@ -46,6 +46,7 @@ font-family: 'Roboto', sans-serif;
 
 .--body--dark-mode {
     background-color: var(--dark-mode--body);
+    color: var(--dark-mode--font-color);
 }
 
 .--container--dark-mode {
@@ -87,6 +88,7 @@ body {
     border: 2px red solid;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    margin: 1rem;
     gap: 1rem;
 }
 
@@ -97,7 +99,6 @@ body {
 .container__game-title {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* background-color: var(--light-mode--containers); */
 }
 
 .container__game-title > h1 {
