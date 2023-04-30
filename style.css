@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /*
-f   ont-family: 'Roboto', sans-serif;
+font-family: 'Roboto', sans-serif;
 */
 
 /*
@@ -23,23 +23,50 @@ f   ont-family: 'Roboto', sans-serif;
     *** Utility Classes ***
 */
 
+.--hide-content {
+    display: none;
+}
+
 .--container {
     width: 90vw;
     margin-left: 5vw;
 }
 
-.--container.--light-mode--containers {
+.--light-mode--body {
+    background-color: var(--light-mode--body);
+}
+
+.--containers--light-mode {
+    width: 90vw;
+    margin-left: 5vw;
     background-color: var(--light-mode--containers);
 }
 
-.--hide-content {
-    display: none;
+.light-mode--font {
+    color: var(--light-mode--font-color);
 }
+
+/* .--dark-mode--body {
+    background-color: var(--dark-mode--body);
+} */
 
 .--light-mode {
     background-color: var(--light-mode--body);
     color: var(--light-mode--font-color);
 }
+
+/* .--light-mode--containers {
+    background-color: var(--light-mode--containers);
+} */
+
+.--dark-mode--containers {
+    background-color: var(--dark-mode--containers);
+}
+
+/* .--dark-mode {
+    background-color: var(--dark-mode--body);
+    color: var(--dark-mode--font-color);
+} */
 
 .--position-relative {
     position: relative;
@@ -62,9 +89,6 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    /* font: var(--light-mode--font-color);
-    background-color: var(--light-mode--body); */
 }
 
 /*
@@ -139,7 +163,7 @@ body {
         2)  Change the colours of the dark and light mode.
 */
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     :root {
         --light-mode--body: #e4e5f1;
         --light-mode--containers: #d2d3db;
@@ -171,4 +195,4 @@ body {
         background-color: var(--dark-mode--body);
         color: var(--dark-mode--font-color);
     }
-}
+} */
