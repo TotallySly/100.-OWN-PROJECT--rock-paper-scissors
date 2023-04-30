@@ -18,3 +18,5 @@ togglerBtn.addEventListener('click', () => {
         container.classList.toggle('--font--dark-mode')
     })
 })
+
+// TODO ---- FIGURE OUT HOW TO CHANGE THE FONT COLOUR FOR DARK MODE
