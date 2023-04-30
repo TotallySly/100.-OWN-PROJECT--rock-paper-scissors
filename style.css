@@ -32,41 +32,29 @@ font-family: 'Roboto', sans-serif;
     margin-left: 5vw;
 }
 
-.--light-mode--body {
+.--body--light-mode {
     background-color: var(--light-mode--body);
 }
 
-.--containers--light-mode {
-    width: 90vw;
-    margin-left: 5vw;
+.--container--light-mode {
     background-color: var(--light-mode--containers);
 }
 
-.light-mode--font {
+.--font--light-mode {
     color: var(--light-mode--font-color);
 }
 
-/* .--dark-mode--body {
+.--body--dark-mode {
     background-color: var(--dark-mode--body);
-} */
-
-.--light-mode {
-    background-color: var(--light-mode--body);
-    color: var(--light-mode--font-color);
 }
 
-/* .--light-mode--containers {
-    background-color: var(--light-mode--containers);
-} */
-
-.--dark-mode--containers {
+.--container--dark-mode {
     background-color: var(--dark-mode--containers);
 }
 
-/* .--dark-mode {
-    background-color: var(--dark-mode--body);
+.--font---dark-mode {
     color: var(--dark-mode--font-color);
-} */
+}
 
 .--position-relative {
     position: relative;
