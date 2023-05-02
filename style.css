@@ -33,7 +33,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .--body--light-mode {
-    background-color: var(--light-mode--body);
+    background-image: linear-gradient(to right, var(--light-mode--body), var(--light-mode--containers));
 }
 
 .--container--light-mode {
@@ -45,7 +45,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .--body--dark-mode {
-    background-color: var(--dark-mode--body);
+    background-image: linear-gradient(to right, var(--dark-mode--body), var(--dark-mode--containers));
     color: var(--dark-mode--font-color);
 }
 
@@ -128,6 +128,21 @@ body {
     width: 7rem;
     border: none;
     border-radius: 10px;
+    transition: color 0.3s ease;
+}
+
+#turnOnDarkMode {
+    background-image: linear-gradient(to right, var(--dark-mode--body), var(--dark-mode--containers));
+    color: white;
+}
+
+#turnOnDarkMode:hover {
+    color: gold;
+}
+
+#turnOnLightMode {
+    background-color: var(--light-mode--containers);
+    color: var(--light-mode--font-color);
 }
 
 /*
