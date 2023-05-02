@@ -33,7 +33,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .--body--light-mode {
-    background-image: linear-gradient(to right, var(--light-mode--body), var(--light-mode--containers));
+    background-image: linear-gradient(to right, var(--light-mode--body), var(--light-mode--containers) 66%);
 }
 
 .--container--light-mode {
@@ -45,7 +45,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .--body--dark-mode {
-    background-image: linear-gradient(to right, var(--dark-mode--body), var(--dark-mode--containers));
+    background-image: linear-gradient(to right, var(--dark-mode--body) 33%, var(--dark-mode--containers));
     color: var(--dark-mode--font-color);
 }
 
@@ -129,20 +129,27 @@ body {
     border: none;
     border-radius: 10px;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
 #turnOnDarkMode {
-    background-image: linear-gradient(to right, var(--dark-mode--body), var(--dark-mode--containers));
-    color: white;
+    background-image: linear-gradient(to right, var(--dark-mode--body) 33%, var(--dark-mode--containers));
+    color: var(--light-mode--body);
+    box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+#turnOnLightMode:active,
+#turnOnDarkMode:active {
+    scale: 0.99;
 }
 
 #turnOnDarkMode:hover {
-    color: gold;
+    color: var(--light-mode--containers);
 }
 
 #turnOnLightMode {
-    background-color: var(--light-mode--containers);
-    color: var(--light-mode--font-color);
+    background-image: linear-gradient(to right, var(--light-mode--body), var(--light-mode--containers));
+    color: rgb(215, 160, 19);
 }
 
 /*
