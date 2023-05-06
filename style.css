@@ -32,6 +32,10 @@ font-family: 'Roboto', sans-serif;
     margin-left: 5vw;
 }
 
+/* 
+    *** Light Mode ***
+*/
+
 .--body--light-mode {
     background-image: linear-gradient(to right, var(--light-mode--body), var(--light-mode--containers) 66%);
 }
@@ -44,6 +48,15 @@ font-family: 'Roboto', sans-serif;
     color: var(--light-mode--font-color);
 }
 
+.--btn--light-mode {
+    background-image: linear-gradient(to right, var(--light-mode--body), var(--light-mode--containers));
+    color: rgb(0, 0, 0);
+}
+
+/* 
+    *** Dark Mode ***
+*/
+
 .--body--dark-mode {
     background-image: linear-gradient(to right, var(--dark-mode--body) 33%, var(--dark-mode--containers));
     color: var(--dark-mode--font-color);
@@ -55,6 +68,12 @@ font-family: 'Roboto', sans-serif;
 
 .--font---dark-mode {
     color: var(--dark-mode--font-color);
+}
+
+.--btn--dark-mode {
+    background-image: linear-gradient(to right, var(--dark-mode--body) 33%, var(--dark-mode--containers));
+    color: var(--light-mode--body);
+    box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.5);
 }
 
 .--position-relative {
@@ -132,12 +151,6 @@ body {
     cursor: pointer;
 }
 
-#turnOnDarkMode {
-    background-image: linear-gradient(to right, var(--dark-mode--body) 33%, var(--dark-mode--containers));
-    color: var(--light-mode--body);
-    box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.5);
-}
-
 #turnOnLightMode:active,
 #turnOnDarkMode:active {
     scale: 0.99;
@@ -148,8 +161,6 @@ body {
 }
 
 #turnOnLightMode {
-    background-image: linear-gradient(to right, var(--light-mode--body), var(--light-mode--containers));
-    color: rgb(215, 160, 19);
 }
 
 /*
